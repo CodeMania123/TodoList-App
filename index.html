@@ -78,6 +78,13 @@ function newElement() {
     }
   }
 }
+
+//Enter key adds new item to list
+document.body.onkeyup = function (e) {
+    if (e.keyCode == 13) {
+        newElement();
+    }
+};
 </script>
 
 </body>
